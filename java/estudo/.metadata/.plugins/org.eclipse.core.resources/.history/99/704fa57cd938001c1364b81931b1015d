@@ -1,0 +1,17 @@
+
+public abstract class Figura {
+	private String cor;
+	
+	public Figura() {
+		
+	}
+	
+	public Figura(String cor) {
+		super();
+		this.cor = cor;
+	}
+	
+	public String getCor() {
+		
+	}
+}

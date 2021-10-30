@@ -1,0 +1,6 @@
+
+public class Teste {
+	public static void main(String[] args) {
+		Retangulo retangulo = new Retangulo("ROsa", 32, 12);
+	}
+}

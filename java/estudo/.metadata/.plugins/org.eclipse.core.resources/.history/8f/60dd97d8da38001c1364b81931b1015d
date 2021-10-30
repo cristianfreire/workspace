@@ -1,0 +1,11 @@
+
+public class Retangulo extends Figura {
+	private double lado1;
+	private double lado2;
+
+	@Override
+	public double area() {
+		return this.lado1*this.lado2;
+	}
+
+}

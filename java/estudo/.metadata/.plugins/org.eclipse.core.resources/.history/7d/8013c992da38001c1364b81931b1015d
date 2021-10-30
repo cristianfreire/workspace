@@ -1,0 +1,12 @@
+
+public class Retangulo extends Figura {
+	private double lado1;
+	private double lado2;
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
