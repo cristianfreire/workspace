@@ -1,0 +1,101 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input [class.is-invalid]="!nome.valid && nome.touched" type="text" name="nome" class="form-control" id="nome"
+            placeholder="Nome" [ngModel]="usuario.nome" required #nome="ngModel">
+
+        <div *ngIf="!nome.valid && nome.touched" class="invalid-feedback" role="alert">
+            Nome é obrigatório
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input [class.is-invalid]="!email.valid && email.touched" type="email" name="email" class="form-control"
+            id="email" placeholder="nome@email.com" [ngModel]="usuario.email" required email #email="ngModel">
+
+        <div *ngIf="!email.valid && email.touched" class="invalid-feedback" role="alert">
+            Email é obrigatório
+        </div>
+    </div>
+
+    <div ngModelGroup="endereco">
+
+        <div class="form-row">
+            <div class="col-md-3">
+                <label for="cep">CEP</label>
+                <input [class.is-invalid]="!cep.valid && cep.touched" type="text" class="form-control" id="cep" name="cep" ngModel cep required #cep="ngModel" placeholder="CEP" (blur)="consultaCEP($event.target.value)">
+                <div *ngIf="!cep.valid && cep.touched" class="invalid-feedback" role="alert">
+                    CEP é obrigatório
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <label for="numero">Número</label>
+                <input [class.is-invalid]="!numero.valid && numero.touched" type="text" class="form-control" id="numero"
+                    name="numero" ngModel numero required #numero="ngModel" placeholder="Número">
+                <div *ngIf="!numero.valid && numero.touched" class="invalid-feedback" role="alert">
+                    Número é obrigatório
+                </div>
+            </div>
+
+
+
+            <div class="col md-6">
+                <label for="complemento" class="control-labe">Complemento</label>
+                <input placeholder="Complemento" type="text" class="form-control" id="complemento" name="complemento"
+                    ngModel complemento #complemento="ngModel">
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="rua">Rua</label>
+
+            <input [class.is-invalid]="!rua.valid && rua.touched" type="text" name="rua" class="form-control" id="rua"
+                [ngModel]="usuario.rua" required #rua="ngModel">
+            <div *ngIf="!rua.valid && rua.touched" class="invalid-feedback" role="alert">
+                rua é obrigatório
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-5">
+                <label for="bairro">Bairro</label>
+                <input [class.is-invalid]="!bairro.valid && bairro.touched" type="text" class="form-control" id="bairro"
+                    name="bairro" ngModel bairro required #bairro="ngModel">
+                <div *ngIf="!bairro.valid && bairro.touched" class="invalid-feedback" role="alert">
+                    Bairro é obrigatório
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="cidade">Cidade</label>
+                <input [class.is-invalid]="!cidade.valid && cidade.touched" type="text" class="form-control" id="cidade"
+                    name="cidade" ngModel cidade required #cidade="ngModel">
+                <div *ngIf="!cidade.valid && cidade.touched" class="invalid-feedback" role="alert">
+                    Cidade é obrigatório
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <label for="estado">Estado</label>
+                <input [class.is-invalid]="!estado.valid && estado.touched" type="text" class="form-control" id="estado"
+                    name="estado" ngModel estado required #estado="ngModel">
+                <div *ngIf="!estado.valid && estado.touched" class="invalid-feedback" role="alert">
+                    Estado é obrigatório
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+
+    <app-form-debug [form]="f"></app-form-debug>
+</form>

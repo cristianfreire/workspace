@@ -1,0 +1,14 @@
+  "node_modules/jquery/dist/jquery.js",
+              "node_modules/tether/dist/js/tether.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/materialize-css/dist/js/materialize.js"
+ 
+
+              "node_modules/bootstrap/dist/css/bootstrap.css"
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+import { MaterializeModule } from 'angular2-materialize';
+
+    MaterializeModule
