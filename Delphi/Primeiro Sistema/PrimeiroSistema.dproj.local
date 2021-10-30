@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/11/11 16:18:16.552,=C:\Users\crist\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/11/11 16:20:14.312,C:\Users\crist\Documents\workspace\Delphi\Primeiro Sistema\unitPrincipal.dfm=C:\Users\crist\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2020/11/11 16:20:14.312,C:\Users\crist\Documents\workspace\Delphi\Primeiro Sistema\unitPrincipal.pas=C:\Users\crist\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/11/11 16:20:51.204,C:\Users\crist\Documents\workspace\Delphi\Primeiro Sistema\PrimeiroSistema.dproj=C:\Users\crist\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
